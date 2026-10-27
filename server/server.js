@@ -80,6 +80,11 @@ if (filePath && filePath.toLowerCase().startsWith(basePath.toLowerCase())) {
 
 const server = http.createServer(function (request, response) {
   // Log request
+    if (path.normalize(decodeURI(request.url)) !== decodeURI(request.url)) {
+        response.statusCode = 403;
+        response.end();
+        return;
+    }
   //console.log('Request:', request.url);
 
   let filePath = path.join(basePath, decodeURI(request.url));
