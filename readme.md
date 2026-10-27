@@ -1,4 +1,4 @@
-# Soldi Examples
+# Solid Examples
 
 Examples for [Solid](https://www.solidjs.com/).
 
@@ -17,4 +17,4 @@ European Union Public Licence version 1.2
 
 ## Copyright
 
-Copyright © 2021-2022 Rick Beerendonk
+Copyright © 2021-2026 Rick Beerendonk
